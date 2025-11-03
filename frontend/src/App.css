@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.h-dscreen {
+  height: 100vh;
+  height: 100dvh;
+}
