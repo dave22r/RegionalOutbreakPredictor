@@ -3,6 +3,7 @@ import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 import "./App.css";
 import { useEffect, useState } from "react";
+import { LinearLoader } from "./components/Loading";
 
 const { VITE_GOOGLE_MAPS_API_KEY, VITE_GOOGLE_MAPS_ID } = import.meta.env;
 
@@ -71,8 +72,13 @@ function App() {
 
 function LoadingScreen() {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <p className="font-bold text-xl text-center">Outbreak Predictor</p>
+    <div className="flex flex-col justify-center items-center gap-6 p-4 md:p-8 h-full">
+      <p className="font-semibold text-4xl md:text-5xl text-center">
+        Outbreak Predictor
+      </p>
+      <div className="w-full max-w-xs md:max-w-sm">
+        <LinearLoader />
+      </div>
     </div>
   );
 }
