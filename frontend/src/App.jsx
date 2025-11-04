@@ -15,6 +15,7 @@ function App() {
     longitude: -122.4,
     latitude: 37.8,
     zoom: DEFAULT_ZOOM,
+    minZoom: 2,
   });
   useEffect(() => {
     let loadTimedout = false;
@@ -43,12 +44,22 @@ function App() {
     <main className="w-screen h-dscreen">
       {ready ? (
         <APIProvider apiKey={VITE_GOOGLE_MAPS_API_KEY}>
-          <DeckGL initialViewState={viewState} controller>
+          <DeckGL
+            initialViewState={viewState}
+            controller={{
+              inertia: 300,
+              scrollZoom: {
+                smooth: true,
+                speed: 0.1,
+              },
+              dragRotate: false,
+            }}
+          >
             <Map
               mapId={VITE_GOOGLE_MAPS_ID}
               renderingType="VECTOR"
               colorScheme="DARK"
-            ></Map>
+            />
           </DeckGL>
         </APIProvider>
       ) : (
