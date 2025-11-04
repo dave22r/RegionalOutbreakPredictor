@@ -4,3 +4,7 @@
   height: 100vh;
   height: 100dvh;
 }
+
+#deckgl-overlay {
+  opacity: 0.7;
+}

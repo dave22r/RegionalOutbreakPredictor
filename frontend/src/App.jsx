@@ -1,4 +1,6 @@
 import { DeckGL } from "@deck.gl/react";
+import { SolidPolygonLayer } from "@deck.gl/layers";
+import { ContourLayer, HeatmapLayer } from "@deck.gl/aggregation-layers";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 import "./App.css";
@@ -41,12 +43,25 @@ function App() {
     );
   }, []);
 
+  const heatmapLayer = new ContourLayer({
+    id: "ContourLayer2",
+    data: "/testdata.json",
+    cellSize: 200,
+    getPosition: (d) => d,
+    getWeight: 1,
+    contours: [
+      { threshold: [0.1, 4], color: [249, 200, 124], zIndex: 1 },
+      { threshold: [4, 100], color: [251, 110, 112], zIndex: 1 },
+    ],
+  });
+
   return (
     <main className="w-screen h-dscreen">
       {ready ? (
         <APIProvider apiKey={VITE_GOOGLE_MAPS_API_KEY}>
           <DeckGL
             initialViewState={viewState}
+            layers={[heatmapLayer]}
             controller={{
               inertia: 300,
               scrollZoom: {
