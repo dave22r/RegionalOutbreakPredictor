@@ -1,6 +1,5 @@
 import { DeckGL } from "@deck.gl/react";
-import { SolidPolygonLayer } from "@deck.gl/layers";
-import { ContourLayer, HeatmapLayer } from "@deck.gl/aggregation-layers";
+import { ContourLayer } from "@deck.gl/aggregation-layers";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 import "./App.css";
