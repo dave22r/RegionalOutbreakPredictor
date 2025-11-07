@@ -66,8 +66,12 @@ export const UserWidget = () => {
                     </UserMenuActionButton>
                     <UserMenuActionButton
                       onClick={() => {
-                        setUserData({});
-                        // TODO: remove session on backend
+                        fetch(`${VITE_BACKEND_URL}/auth/logout`, {
+                          credentials: "include",
+                        }).then(() => {
+                          setShowUserMenu(false);
+                          setUserData({});
+                        });
                       }}
                     >
                       <Icon path={mdiLogout} size={1} />
