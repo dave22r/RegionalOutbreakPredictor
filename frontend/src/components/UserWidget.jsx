@@ -32,7 +32,11 @@ export const UserWidget = () => {
             className="top-4 right-4 fixed rounded-full cursor-pointer"
             onClick={() => setShowUserMenu(true)}
           >
-            <img className="rounded-full w-10 h-10" src={userData.picture} />
+            <img
+              className="rounded-full w-10 h-10"
+              src={userData.picture}
+              referrerPolicy="no-referrer"
+            />
           </button>
           {showUserMenu && (
             <Portal>
@@ -48,6 +52,7 @@ export const UserWidget = () => {
                   <img
                     className="rounded-full w-16 h-16"
                     src={userData.picture}
+                    referrerPolicy="no-referrer"
                   />
                   <p className="-mt-4 text-lg">Hello, {userData.given_name}</p>
                   <div className="flex flex-col items-stretch gap-1 w-full">
