@@ -4,6 +4,7 @@ import crypto from "node:crypto";
 import express from "express";
 import session from "express-session";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 import { google } from "googleapis";
 
@@ -24,6 +25,7 @@ app.use(
   })
 );
 app.use(cookieParser());
+app.use(cors({ origin: process.env.FRONTEND_URL, credentials: true }));
 
 const traverse = (dir, fn) => {
   const files = fs.readdirSync(dir);
