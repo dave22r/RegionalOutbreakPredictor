@@ -94,7 +94,7 @@ export const UserWidget = () => {
       ) : (
         <button
           type="button"
-          className="top-4 right-4 fixed cursor-pointer"
+          className="top-4 right-4 fixed bg-blue-300 shadow-lg px-4 py-2 rounded-full text-blue-950 cursor-pointer"
           onClick={() => {
             location.href = `${VITE_BACKEND_URL}/auth/login`;
           }}
