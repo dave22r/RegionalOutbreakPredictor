@@ -5,6 +5,7 @@ import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import "./App.css";
 import { useEffect, useState } from "react";
 import { LinearLoader } from "./components/Loading";
+import { UserWidget } from "./components/UserWidget";
 
 const { VITE_GOOGLE_MAPS_API_KEY, VITE_GOOGLE_MAPS_ID } = import.meta.env;
 
@@ -57,26 +58,29 @@ function App() {
   return (
     <main className="w-screen h-dscreen">
       {ready ? (
-        <APIProvider apiKey={VITE_GOOGLE_MAPS_API_KEY}>
-          <DeckGL
-            initialViewState={viewState}
-            layers={[heatmapLayer]}
-            controller={{
-              inertia: 300,
-              scrollZoom: {
-                smooth: true,
-                speed: 0.1,
-              },
-              dragRotate: false,
-            }}
-          >
-            <Map
-              mapId={VITE_GOOGLE_MAPS_ID}
-              renderingType="VECTOR"
-              colorScheme="DARK"
-            />
-          </DeckGL>
-        </APIProvider>
+        <>
+          <APIProvider apiKey={VITE_GOOGLE_MAPS_API_KEY}>
+            <DeckGL
+              initialViewState={viewState}
+              layers={[heatmapLayer]}
+              controller={{
+                inertia: 300,
+                scrollZoom: {
+                  smooth: true,
+                  speed: 0.1,
+                },
+                dragRotate: false,
+              }}
+            >
+              <Map
+                mapId={VITE_GOOGLE_MAPS_ID}
+                renderingType="VECTOR"
+                colorScheme="DARK"
+              />
+            </DeckGL>
+          </APIProvider>
+          <UserWidget />
+        </>
       ) : (
         <LoadingScreen />
       )}
