@@ -18,91 +18,97 @@ export const UserWidget = () => {
         }).then((j) => j.json());
         if (j.name) setUserData(j);
       } catch {}
+      setShowWidget(true);
     })();
   }, []);
 
+  const [showWidget, setShowWidget] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
 
   return (
-    <>
-      {userData.name ? (
-        <>
+    showWidget && (
+      <>
+        {userData.name ? (
+          <>
+            <button
+              type="button"
+              className="top-4 right-4 fixed rounded-full cursor-pointer"
+              onClick={() => setShowUserMenu(true)}
+            >
+              <img
+                className="rounded-full w-10 h-10"
+                src={userData.picture}
+                referrerPolicy="no-referrer"
+              />
+            </button>
+            {showUserMenu && (
+              <Portal>
+                <div
+                  className="top-0 right-0 bottom-0 left-0 z-40 fixed bg-opacity-50"
+                  onClick={() => setShowUserMenu(false)}
+                >
+                  <div
+                    className="top-0 xs:top-16 right-0 xs:right-4 bottom-0 xs:bottom-auto left-0 xs:left-auto fixed flex flex-col items-center gap-8 bg-gray-800 shadow-xl p-4 xs:rounded-3xl w-full xs:max-w-xs font-medium"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <p className="text-sm">{userData.email}</p>
+                    <img
+                      className="rounded-full w-16 h-16"
+                      src={userData.picture}
+                      referrerPolicy="no-referrer"
+                    />
+                    <p className="-mt-4 text-lg">
+                      Hello, {userData.given_name}
+                    </p>
+                    <div className="flex flex-col items-stretch gap-1 w-full">
+                      <UserMenuActionButton
+                        onClick={() => {
+                          // TODO: settings
+                        }}
+                      >
+                        <Icon path={mdiCogOutline} size={1} />
+                        Settings
+                      </UserMenuActionButton>
+                      <UserMenuActionButton
+                        onClick={() => {
+                          fetch(`${VITE_BACKEND_URL}/auth/logout`, {
+                            credentials: "include",
+                          }).then(() => {
+                            setShowUserMenu(false);
+                            setUserData({});
+                          });
+                        }}
+                      >
+                        <Icon path={mdiLogout} size={1} />
+                        Sign out
+                      </UserMenuActionButton>
+                    </div>
+
+                    <button
+                      type="button"
+                      className="top-2 right-2 absolute hover:bg-gray-700 p-2 rounded-full text-gray-200 cursor-pointer"
+                      onClick={() => setShowUserMenu(false)}
+                    >
+                      <Icon path={mdiWindowClose} size={1} />
+                    </button>
+                  </div>
+                </div>
+              </Portal>
+            )}
+          </>
+        ) : (
           <button
             type="button"
-            className="top-4 right-4 fixed rounded-full cursor-pointer"
-            onClick={() => setShowUserMenu(true)}
+            className="top-4 right-4 fixed bg-blue-300 shadow-lg px-4 py-2 rounded-full text-blue-950 cursor-pointer"
+            onClick={() => {
+              location.href = `${VITE_BACKEND_URL}/auth/login`;
+            }}
           >
-            <img
-              className="rounded-full w-10 h-10"
-              src={userData.picture}
-              referrerPolicy="no-referrer"
-            />
+            Sign in
           </button>
-          {showUserMenu && (
-            <Portal>
-              <div
-                className="top-0 right-0 bottom-0 left-0 z-40 fixed bg-opacity-50"
-                onClick={() => setShowUserMenu(false)}
-              >
-                <div
-                  className="top-0 xs:top-16 right-0 xs:right-4 bottom-0 xs:bottom-auto left-0 xs:left-auto fixed flex flex-col items-center gap-8 bg-gray-800 shadow-xl p-4 xs:rounded-3xl w-full xs:max-w-xs font-medium"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <p className="text-sm">{userData.email}</p>
-                  <img
-                    className="rounded-full w-16 h-16"
-                    src={userData.picture}
-                    referrerPolicy="no-referrer"
-                  />
-                  <p className="-mt-4 text-lg">Hello, {userData.given_name}</p>
-                  <div className="flex flex-col items-stretch gap-1 w-full">
-                    <UserMenuActionButton
-                      onClick={() => {
-                        // TODO: settings
-                      }}
-                    >
-                      <Icon path={mdiCogOutline} size={1} />
-                      Settings
-                    </UserMenuActionButton>
-                    <UserMenuActionButton
-                      onClick={() => {
-                        fetch(`${VITE_BACKEND_URL}/auth/logout`, {
-                          credentials: "include",
-                        }).then(() => {
-                          setShowUserMenu(false);
-                          setUserData({});
-                        });
-                      }}
-                    >
-                      <Icon path={mdiLogout} size={1} />
-                      Sign out
-                    </UserMenuActionButton>
-                  </div>
-
-                  <button
-                    type="button"
-                    className="top-2 right-2 absolute hover:bg-gray-700 p-2 rounded-full text-gray-200 cursor-pointer"
-                    onClick={() => setShowUserMenu(false)}
-                  >
-                    <Icon path={mdiWindowClose} size={1} />
-                  </button>
-                </div>
-              </div>
-            </Portal>
-          )}
-        </>
-      ) : (
-        <button
-          type="button"
-          className="top-4 right-4 fixed bg-blue-300 shadow-lg px-4 py-2 rounded-full text-blue-950 cursor-pointer"
-          onClick={() => {
-            location.href = `${VITE_BACKEND_URL}/auth/login`;
-          }}
-        >
-          Sign in
-        </button>
-      )}
-    </>
+        )}
+      </>
+    )
   );
 };
 
