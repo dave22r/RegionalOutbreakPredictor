@@ -7,9 +7,7 @@ export const handler = async (req, res) => {
   const token = req.cookies.token;
   if (!token || !sessionStates[token]) return res.sendStatus(403);
 
-  if (sessionStates[token].publicUserInfo) {
-    return res.status(200).json(sessionStates[token].publicUserInfo);
-  } else {
+  if (!sessionStates[token].publicUserInfo) {
     const oauth2Client = oauth2Clients[token];
     if (!oauth2Client) return res.sendStatus(403);
 
@@ -23,6 +21,6 @@ export const handler = async (req, res) => {
       family_name: data.family_name,
       picture: data.picture,
     };
-    res.status(200).json(sessionStates[token].publicUserInfo);
   }
+  res.status(200).json(sessionStates[token].publicUserInfo);
 };
