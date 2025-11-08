@@ -9,7 +9,7 @@ import { UserWidget } from "./components/UserWidget";
 
 const { VITE_GOOGLE_MAPS_API_KEY, VITE_GOOGLE_MAPS_ID } = import.meta.env;
 
-const LOADING_TIME_LIMIT = 3000;
+const LOADING_TIME_LIMIT = 2000;
 const DEFAULT_ZOOM = 12;
 
 function App() {
@@ -21,11 +21,6 @@ function App() {
     minZoom: 2,
   });
   useEffect(() => {
-    let loadTimedout = false;
-    const timer = setTimeout(() => {
-      loadTimedout = true;
-      setReady(true);
-    }, LOADING_TIME_LIMIT);
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => {
         if (!loadTimedout) {
@@ -39,7 +34,12 @@ function App() {
           setReady(true);
         }
       },
-      () => setReady(true)
+      () => setReady(true),
+      {
+        enableHighAccuracy: false,
+        timeout: LOADING_TIME_LIMIT,
+        maximumAge: 3600000,
+      }
     );
   }, []);
 
