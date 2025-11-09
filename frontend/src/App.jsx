@@ -1,9 +1,9 @@
-import { DeckGL } from "@deck.gl/react";
 import { ContourLayer } from "@deck.gl/aggregation-layers";
-import { APIProvider, Map } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, useMap } from "@vis.gl/react-google-maps";
+import { GoogleMapsOverlay } from "@deck.gl/google-maps";
 
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { LinearLoader } from "./components/Loading";
 import { UserWidget } from "./components/UserWidget";
 
@@ -12,21 +12,30 @@ const { VITE_GOOGLE_MAPS_API_KEY, VITE_GOOGLE_MAPS_ID } = import.meta.env;
 const LOADING_TIME_LIMIT = 2000;
 const DEFAULT_ZOOM = 12;
 
+function DeckGLOverlay(props) {
+  const map = useMap();
+  const overlay = useMemo(() => new GoogleMapsOverlay(props));
+
+  useEffect(() => {
+    overlay.setMap(map);
+    return () => overlay.setMap(null);
+  }, [map]);
+
+  overlay.setProps(props);
+  return null;
+}
+
 function App() {
   const [ready, setReady] = useState(false);
-  const [viewState, setViewState] = useState({
-    longitude: -122.4,
-    latitude: 37.8,
+  const [camera, setCamera] = useState({
+    center: { lat: 37.8, lng: -122.4 },
     zoom: DEFAULT_ZOOM,
-    minZoom: 2,
   });
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => {
-        setViewState({
-          ...viewState,
-          latitude: coords.latitude,
-          longitude: coords.longitude,
+        setCamera({
+          center: { lat: coords.latitude, lng: coords.longitude },
           zoom: DEFAULT_ZOOM,
         });
         setReady(true);
@@ -40,43 +49,12 @@ function App() {
     );
   }, []);
 
-  const heatmapLayer = new ContourLayer({
-    id: "ContourLayer2",
-    data: "/testdata.json",
-    cellSize: 200,
-    getPosition: (d) => d,
-    getWeight: 1,
-    contours: [
-      { threshold: [0.1, 4], color: [249, 200, 124], zIndex: 1 },
-      { threshold: [4, 100], color: [251, 110, 112], zIndex: 1 },
-    ],
-  });
-
   return (
     <main className="w-screen h-dscreen">
       {ready ? (
         <>
           <APIProvider apiKey={VITE_GOOGLE_MAPS_API_KEY}>
-            <DeckGL
-              initialViewState={viewState}
-              layers={[heatmapLayer]}
-              controller={{
-                inertia: 300,
-                scrollZoom: {
-                  smooth: true,
-                  speed: 0.1,
-                },
-                dragRotate: false,
-              }}
-            >
-              <Map
-                mapId={VITE_GOOGLE_MAPS_ID}
-                renderingType="VECTOR"
-                colorScheme="DARK"
-                defaultCenter={[-122.4, 37.8]}
-                defaultZoom={DEFAULT_ZOOM}
-              />
-            </DeckGL>
+            <CustomMap camera={camera} setCamera={setCamera} />
           </APIProvider>
           <UserWidget />
         </>
@@ -84,6 +62,31 @@ function App() {
         <LoadingScreen />
       )}
     </main>
+  );
+}
+
+function CustomMap({ camera, setCamera }) {
+  const handleCameraChange = useCallback((e) => setCamera(e.detail));
+
+  const heatmapLayer = new ContourLayer({
+    id: "ContourLayer2",
+    data: "/testdata.json",
+    cellSize: 200,
+    getPosition: (d) => d,
+    getWeight: 1,
+    contours: [{ threshold: [0, 100], color: [251, 110, 112, 128], zIndex: 1 }],
+  });
+  return (
+    <Map
+      mapId={VITE_GOOGLE_MAPS_ID}
+      renderingType="VECTOR"
+      colorScheme="DARK"
+      {...camera}
+      onCameraChanged={handleCameraChange}
+      disableDefaultUI={true}
+    >
+      <DeckGLOverlay layers={[heatmapLayer]} />
+    </Map>
   );
 }
 

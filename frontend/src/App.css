@@ -5,6 +5,6 @@
   height: 100dvh;
 }
 
-#deckgl-overlay {
-  opacity: 0.7;
+div[tabindex="0"][aria-roledescription="map"] {
+  @apply hidden;
 }
