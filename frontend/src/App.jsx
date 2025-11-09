@@ -73,6 +73,8 @@ function App() {
                 mapId={VITE_GOOGLE_MAPS_ID}
                 renderingType="VECTOR"
                 colorScheme="DARK"
+                defaultCenter={[-122.4, 37.8]}
+                defaultZoom={DEFAULT_ZOOM}
               />
             </DeckGL>
           </APIProvider>
