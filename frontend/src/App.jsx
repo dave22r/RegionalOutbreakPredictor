@@ -23,16 +23,13 @@ function App() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => {
-        if (!loadTimedout) {
-          clearTimeout(timer);
-          setViewState({
-            ...viewState,
-            latitude: coords.latitude,
-            longitude: coords.longitude,
-            zoom: DEFAULT_ZOOM,
-          });
-          setReady(true);
-        }
+        setViewState({
+          ...viewState,
+          latitude: coords.latitude,
+          longitude: coords.longitude,
+          zoom: DEFAULT_ZOOM,
+        });
+        setReady(true);
       },
       () => setReady(true),
       {
