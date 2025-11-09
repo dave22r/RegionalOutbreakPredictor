@@ -84,6 +84,7 @@ function CustomMap({ camera, setCamera }) {
       {...camera}
       onCameraChanged={handleCameraChange}
       disableDefaultUI={true}
+      keyboardShortcuts={false}
     >
       <DeckGLOverlay layers={[heatmapLayer]} />
     </Map>
