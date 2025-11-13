@@ -2,7 +2,7 @@ import { google } from "googleapis";
 
 import { oauth2Clients, sessionStates } from "../../app.js";
 
-export const method = "GET";
+export const method = "get";
 export const handler = async (req, res) => {
   const token = req.cookies.token;
   if (!token || !sessionStates[token]) return res.sendStatus(403);
