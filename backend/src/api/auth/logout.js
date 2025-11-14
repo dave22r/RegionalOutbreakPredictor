@@ -1,7 +1,6 @@
-import { oauth2Clients, sessionStates } from "../../app.js";
+import { oauth2Clients, sessionStates } from "../../../app.js";
 
-export const method = "get";
-export const handler = async (req, res) => {
+export const GET = async (req, res) => {
   try {
     const token = req.cookies.token;
     if (token && sessionStates[token]) {

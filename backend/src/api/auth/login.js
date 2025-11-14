@@ -1,11 +1,10 @@
 import crypto from "node:crypto";
 
-import { newOauth2Client, oauth2Clients } from "../../app.js";
+import { newOauth2Client, oauth2Clients } from "../../../app.js";
 
 const scopes = ["userinfo.email", "userinfo.profile"].map((s) => `https://www.googleapis.com/auth/${s}`);
 
-export const method = "get";
-export const handler = (req, res) => {
+export const GET = (req, res) => {
   const state = crypto.randomBytes(32).toString("hex");
   req.session.state = state;
   oauth2Clients[state] = newOauth2Client();
