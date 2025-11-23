@@ -1,14 +1,11 @@
 import { db } from "../utils/firebase.js";
 
-export const method = "POST";
-
-export const handler = async (req, res) => {
+export const POST = async (req, res) => {
   try {
     const body = req.body;
 
     // Validate the input first (the min.)
-    if (!body || typeof body !== "object")
-      return res.status(400).json({ error: "Invalid body" });
+    if (!body || typeof body !== "object") return res.status(400).json({ error: "Invalid body" });
 
     // save symptom report
     const ref = await db.collection("symptoms").add({

@@ -1,9 +1,8 @@
 import url from "node:url";
 
-import { oauth2Clients, sessionStates } from "../../app.js";
+import { oauth2Clients, sessionStates } from "../../../app.js";
 
-export const method = "GET";
-export const handler = async (req, res) => {
+export const GET = async (req, res) => {
   const q = url.parse(req.url, true).query;
   if (q.error) {
     console.log("Error:" + q.error);

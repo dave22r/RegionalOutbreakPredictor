@@ -1,8 +1,8 @@
-import { sessionStates } from "../app.js";
+import { sessionStates } from "../../app.js";
 
 export const devOnly = true;
-export const method = "GET";
-export const handler = (req, res) => {
+
+export const GET = (req, res) => {
   console.log(req.session);
 
   const token = req.cookies.token;
