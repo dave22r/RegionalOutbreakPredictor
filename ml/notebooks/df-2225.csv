@@ -1,0 +1,721 @@
+REGION,YEAR,WEEK,LABEL,TOTAL CASES
+CALIFORNIA,2022,1,Campylobacteriosis,47.0
+CALIFORNIA,2022,1,Coccidioidomycosis,10.0
+CALIFORNIA,2022,1,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),1.0
+CALIFORNIA,2022,2,Campylobacteriosis,30.0
+CALIFORNIA,2022,2,Coccidioidomycosis,8.0
+CALIFORNIA,2022,2,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),6.0
+CALIFORNIA,2022,3,Campylobacteriosis,
+CALIFORNIA,2022,3,Coccidioidomycosis,
+CALIFORNIA,2022,3,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2022,4,Campylobacteriosis,2.0
+CALIFORNIA,2022,4,Coccidioidomycosis,2.0
+CALIFORNIA,2022,4,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2022,5,Campylobacteriosis,27.0
+CALIFORNIA,2022,5,Coccidioidomycosis,12.0
+CALIFORNIA,2022,5,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),3.0
+CALIFORNIA,2022,6,Campylobacteriosis,29.0
+CALIFORNIA,2022,6,Coccidioidomycosis,15.0
+CALIFORNIA,2022,6,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),2.0
+CALIFORNIA,2022,7,Campylobacteriosis,95.0
+CALIFORNIA,2022,7,Coccidioidomycosis,43.0
+CALIFORNIA,2022,7,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+CALIFORNIA,2022,8,Campylobacteriosis,60.0
+CALIFORNIA,2022,8,Coccidioidomycosis,23.0
+CALIFORNIA,2022,8,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),11.0
+CALIFORNIA,2022,9,Campylobacteriosis,54.0
+CALIFORNIA,2022,9,Coccidioidomycosis,22.0
+CALIFORNIA,2022,9,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2022,10,Campylobacteriosis,58.0
+CALIFORNIA,2022,10,Coccidioidomycosis,20.0
+CALIFORNIA,2022,10,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),10.0
+CALIFORNIA,2022,11,Campylobacteriosis,48.0
+CALIFORNIA,2022,11,Coccidioidomycosis,28.0
+CALIFORNIA,2022,11,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),22.0
+CALIFORNIA,2022,12,Campylobacteriosis,89.0
+CALIFORNIA,2022,12,Coccidioidomycosis,23.0
+CALIFORNIA,2022,12,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),15.0
+CALIFORNIA,2022,13,Campylobacteriosis,114.0
+CALIFORNIA,2022,13,Coccidioidomycosis,27.0
+CALIFORNIA,2022,13,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2022,14,Campylobacteriosis,52.0
+CALIFORNIA,2022,14,Coccidioidomycosis,30.0
+CALIFORNIA,2022,14,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),22.0
+CALIFORNIA,2022,15,Campylobacteriosis,116.0
+CALIFORNIA,2022,15,Coccidioidomycosis,42.0
+CALIFORNIA,2022,15,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+CALIFORNIA,2022,16,Campylobacteriosis,66.0
+CALIFORNIA,2022,16,Coccidioidomycosis,22.0
+CALIFORNIA,2022,16,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),29.0
+CALIFORNIA,2022,17,Campylobacteriosis,170.0
+CALIFORNIA,2022,17,Coccidioidomycosis,67.0
+CALIFORNIA,2022,17,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),34.0
+CALIFORNIA,2022,18,Campylobacteriosis,164.0
+CALIFORNIA,2022,18,Coccidioidomycosis,38.0
+CALIFORNIA,2022,18,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2022,19,Campylobacteriosis,171.0
+CALIFORNIA,2022,19,Coccidioidomycosis,30.0
+CALIFORNIA,2022,19,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2022,20,Campylobacteriosis,79.0
+CALIFORNIA,2022,20,Coccidioidomycosis,29.0
+CALIFORNIA,2022,20,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+CALIFORNIA,2022,21,Campylobacteriosis,154.0
+CALIFORNIA,2022,21,Coccidioidomycosis,18.0
+CALIFORNIA,2022,21,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2022,22,Campylobacteriosis,87.0
+CALIFORNIA,2022,22,Coccidioidomycosis,15.0
+CALIFORNIA,2022,22,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+CALIFORNIA,2022,23,Campylobacteriosis,175.0
+CALIFORNIA,2022,23,Coccidioidomycosis,60.0
+CALIFORNIA,2022,23,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2022,24,Campylobacteriosis,160.0
+CALIFORNIA,2022,24,Coccidioidomycosis,37.0
+CALIFORNIA,2022,24,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),14.0
+CALIFORNIA,2022,25,Campylobacteriosis,164.0
+CALIFORNIA,2022,25,Coccidioidomycosis,44.0
+CALIFORNIA,2022,25,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),22.0
+CALIFORNIA,2022,26,Campylobacteriosis,145.0
+CALIFORNIA,2022,26,Coccidioidomycosis,34.0
+CALIFORNIA,2022,26,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2022,27,Campylobacteriosis,47.0
+CALIFORNIA,2022,27,Coccidioidomycosis,10.0
+CALIFORNIA,2022,27,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2022,28,Campylobacteriosis,157.0
+CALIFORNIA,2022,28,Coccidioidomycosis,23.0
+CALIFORNIA,2022,28,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),24.0
+CALIFORNIA,2022,29,Campylobacteriosis,126.0
+CALIFORNIA,2022,29,Coccidioidomycosis,37.0
+CALIFORNIA,2022,29,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2022,30,Campylobacteriosis,139.0
+CALIFORNIA,2022,30,Coccidioidomycosis,26.0
+CALIFORNIA,2022,30,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),24.0
+CALIFORNIA,2022,31,Campylobacteriosis,167.0
+CALIFORNIA,2022,31,Coccidioidomycosis,64.0
+CALIFORNIA,2022,31,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),45.0
+CALIFORNIA,2022,32,Campylobacteriosis,128.0
+CALIFORNIA,2022,32,Coccidioidomycosis,49.0
+CALIFORNIA,2022,32,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),35.0
+CALIFORNIA,2022,33,Campylobacteriosis,157.0
+CALIFORNIA,2022,33,Coccidioidomycosis,50.0
+CALIFORNIA,2022,33,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),39.0
+CALIFORNIA,2022,34,Campylobacteriosis,111.0
+CALIFORNIA,2022,34,Coccidioidomycosis,47.0
+CALIFORNIA,2022,34,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2022,35,Campylobacteriosis,100.0
+CALIFORNIA,2022,35,Coccidioidomycosis,45.0
+CALIFORNIA,2022,35,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),24.0
+CALIFORNIA,2022,36,Campylobacteriosis,152.0
+CALIFORNIA,2022,36,Coccidioidomycosis,28.0
+CALIFORNIA,2022,36,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),46.0
+CALIFORNIA,2022,37,Campylobacteriosis,122.0
+CALIFORNIA,2022,37,Coccidioidomycosis,31.0
+CALIFORNIA,2022,37,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),33.0
+CALIFORNIA,2022,38,Campylobacteriosis,143.0
+CALIFORNIA,2022,38,Coccidioidomycosis,68.0
+CALIFORNIA,2022,38,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),37.0
+CALIFORNIA,2022,39,Campylobacteriosis,115.0
+CALIFORNIA,2022,39,Coccidioidomycosis,41.0
+CALIFORNIA,2022,39,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),33.0
+CALIFORNIA,2022,40,Campylobacteriosis,131.0
+CALIFORNIA,2022,40,Coccidioidomycosis,96.0
+CALIFORNIA,2022,40,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),27.0
+CALIFORNIA,2022,41,Campylobacteriosis,148.0
+CALIFORNIA,2022,41,Coccidioidomycosis,70.0
+CALIFORNIA,2022,41,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),33.0
+CALIFORNIA,2022,42,Campylobacteriosis,120.0
+CALIFORNIA,2022,42,Coccidioidomycosis,33.0
+CALIFORNIA,2022,42,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),23.0
+CALIFORNIA,2022,43,Campylobacteriosis,125.0
+CALIFORNIA,2022,43,Coccidioidomycosis,44.0
+CALIFORNIA,2022,43,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),30.0
+CALIFORNIA,2022,44,Campylobacteriosis,111.0
+CALIFORNIA,2022,44,Coccidioidomycosis,54.0
+CALIFORNIA,2022,44,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),24.0
+CALIFORNIA,2022,45,Campylobacteriosis,73.0
+CALIFORNIA,2022,45,Coccidioidomycosis,29.0
+CALIFORNIA,2022,45,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2022,46,Campylobacteriosis,113.0
+CALIFORNIA,2022,46,Coccidioidomycosis,22.0
+CALIFORNIA,2022,46,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),10.0
+CALIFORNIA,2022,47,Campylobacteriosis,107.0
+CALIFORNIA,2022,47,Coccidioidomycosis,20.0
+CALIFORNIA,2022,47,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),10.0
+CALIFORNIA,2022,48,Campylobacteriosis,131.0
+CALIFORNIA,2022,48,Coccidioidomycosis,37.0
+CALIFORNIA,2022,48,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),28.0
+CALIFORNIA,2022,49,Campylobacteriosis,117.0
+CALIFORNIA,2022,49,Coccidioidomycosis,26.0
+CALIFORNIA,2022,49,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2022,50,Campylobacteriosis,115.0
+CALIFORNIA,2022,50,Coccidioidomycosis,20.0
+CALIFORNIA,2022,50,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),9.0
+CALIFORNIA,2022,51,Campylobacteriosis,75.0
+CALIFORNIA,2022,51,Coccidioidomycosis,26.0
+CALIFORNIA,2022,51,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),11.0
+CALIFORNIA,2022,52,Campylobacteriosis,57.0
+CALIFORNIA,2022,52,Coccidioidomycosis,18.0
+CALIFORNIA,2022,52,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),11.0
+CALIFORNIA,2023,1,Campylobacteriosis,136.0
+CALIFORNIA,2023,1,"Coccidioidomycosis, Confirmed",25.0
+CALIFORNIA,2023,1,"Coccidioidomycosis, total",25.0
+CALIFORNIA,2023,1,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2023,2,Campylobacteriosis,156.0
+CALIFORNIA,2023,2,"Coccidioidomycosis, Confirmed",44.0
+CALIFORNIA,2023,2,"Coccidioidomycosis, total",44.0
+CALIFORNIA,2023,2,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2023,3,Campylobacteriosis,127.0
+CALIFORNIA,2023,3,"Coccidioidomycosis, Confirmed",23.0
+CALIFORNIA,2023,3,"Coccidioidomycosis, total",23.0
+CALIFORNIA,2023,3,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),14.0
+CALIFORNIA,2023,4,Campylobacteriosis,133.0
+CALIFORNIA,2023,4,"Coccidioidomycosis, Confirmed",53.0
+CALIFORNIA,2023,4,"Coccidioidomycosis, total",53.0
+CALIFORNIA,2023,4,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+CALIFORNIA,2023,5,Campylobacteriosis,152.0
+CALIFORNIA,2023,5,"Coccidioidomycosis, Confirmed",35.0
+CALIFORNIA,2023,5,"Coccidioidomycosis, total",35.0
+CALIFORNIA,2023,5,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),18.0
+CALIFORNIA,2023,6,Campylobacteriosis,144.0
+CALIFORNIA,2023,6,"Coccidioidomycosis, Confirmed",53.0
+CALIFORNIA,2023,6,"Coccidioidomycosis, total",53.0
+CALIFORNIA,2023,6,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),27.0
+CALIFORNIA,2023,7,Campylobacteriosis,125.0
+CALIFORNIA,2023,7,"Coccidioidomycosis, Confirmed",43.0
+CALIFORNIA,2023,7,"Coccidioidomycosis, total",43.0
+CALIFORNIA,2023,7,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),15.0
+CALIFORNIA,2023,8,Campylobacteriosis,112.0
+CALIFORNIA,2023,8,"Coccidioidomycosis, Confirmed",29.0
+CALIFORNIA,2023,8,"Coccidioidomycosis, total",29.0
+CALIFORNIA,2023,8,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2023,9,Campylobacteriosis,120.0
+CALIFORNIA,2023,9,"Coccidioidomycosis, Confirmed",50.0
+CALIFORNIA,2023,9,"Coccidioidomycosis, total",50.0
+CALIFORNIA,2023,9,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2023,10,Campylobacteriosis,117.0
+CALIFORNIA,2023,10,"Coccidioidomycosis, Confirmed",39.0
+CALIFORNIA,2023,10,"Coccidioidomycosis, total",39.0
+CALIFORNIA,2023,10,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),15.0
+CALIFORNIA,2023,11,Campylobacteriosis,121.0
+CALIFORNIA,2023,11,"Coccidioidomycosis, Confirmed",53.0
+CALIFORNIA,2023,11,"Coccidioidomycosis, total",53.0
+CALIFORNIA,2023,11,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2023,13,Campylobacteriosis,131.0
+CALIFORNIA,2023,13,"Coccidioidomycosis, Confirmed",31.0
+CALIFORNIA,2023,13,"Coccidioidomycosis, total",31.0
+CALIFORNIA,2023,13,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2023,14,Campylobacteriosis,169.0
+CALIFORNIA,2023,14,"Coccidioidomycosis, Confirmed",49.0
+CALIFORNIA,2023,14,"Coccidioidomycosis, total",49.0
+CALIFORNIA,2023,14,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),9.0
+CALIFORNIA,2023,15,Campylobacteriosis,167.0
+CALIFORNIA,2023,15,"Coccidioidomycosis, Confirmed",50.0
+CALIFORNIA,2023,15,"Coccidioidomycosis, total",50.0
+CALIFORNIA,2023,15,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),9.0
+CALIFORNIA,2023,16,Campylobacteriosis,147.0
+CALIFORNIA,2023,16,"Coccidioidomycosis, Confirmed",53.0
+CALIFORNIA,2023,16,"Coccidioidomycosis, total",53.0
+CALIFORNIA,2023,16,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2023,17,Campylobacteriosis,165.0
+CALIFORNIA,2023,17,"Coccidioidomycosis, Confirmed",49.0
+CALIFORNIA,2023,17,"Coccidioidomycosis, total",49.0
+CALIFORNIA,2023,17,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2023,18,Campylobacteriosis,129.0
+CALIFORNIA,2023,18,"Coccidioidomycosis, Confirmed",30.0
+CALIFORNIA,2023,18,"Coccidioidomycosis, total",30.0
+CALIFORNIA,2023,18,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),21.0
+CALIFORNIA,2023,19,Campylobacteriosis,146.0
+CALIFORNIA,2023,19,"Coccidioidomycosis, Confirmed",38.0
+CALIFORNIA,2023,19,"Coccidioidomycosis, total",38.0
+CALIFORNIA,2023,19,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),26.0
+CALIFORNIA,2023,20,Campylobacteriosis,201.0
+CALIFORNIA,2023,20,"Coccidioidomycosis, Confirmed",31.0
+CALIFORNIA,2023,20,"Coccidioidomycosis, total",31.0
+CALIFORNIA,2023,20,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),22.0
+CALIFORNIA,2023,21,Campylobacteriosis,133.0
+CALIFORNIA,2023,21,"Coccidioidomycosis, Confirmed",12.0
+CALIFORNIA,2023,21,"Coccidioidomycosis, total",12.0
+CALIFORNIA,2023,21,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),24.0
+CALIFORNIA,2023,22,Campylobacteriosis,166.0
+CALIFORNIA,2023,22,"Coccidioidomycosis, Confirmed",59.0
+CALIFORNIA,2023,22,"Coccidioidomycosis, total",59.0
+CALIFORNIA,2023,22,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),38.0
+CALIFORNIA,2023,23,Campylobacteriosis,187.0
+CALIFORNIA,2023,23,"Coccidioidomycosis, Confirmed",46.0
+CALIFORNIA,2023,23,"Coccidioidomycosis, total",46.0
+CALIFORNIA,2023,23,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),22.0
+CALIFORNIA,2023,24,Campylobacteriosis,143.0
+CALIFORNIA,2023,24,"Coccidioidomycosis, Confirmed",33.0
+CALIFORNIA,2023,24,"Coccidioidomycosis, total",33.0
+CALIFORNIA,2023,24,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),33.0
+CALIFORNIA,2023,25,Campylobacteriosis,210.0
+CALIFORNIA,2023,25,"Coccidioidomycosis, Confirmed",45.0
+CALIFORNIA,2023,25,"Coccidioidomycosis, total",45.0
+CALIFORNIA,2023,25,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),35.0
+CALIFORNIA,2023,26,Campylobacteriosis,195.0
+CALIFORNIA,2023,26,"Coccidioidomycosis, Confirmed",35.0
+CALIFORNIA,2023,26,"Coccidioidomycosis, total",35.0
+CALIFORNIA,2023,26,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2023,27,Campylobacteriosis,229.0
+CALIFORNIA,2023,27,"Coccidioidomycosis, Confirmed",34.0
+CALIFORNIA,2023,27,"Coccidioidomycosis, total",34.0
+CALIFORNIA,2023,27,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),27.0
+CALIFORNIA,2023,28,Campylobacteriosis,252.0
+CALIFORNIA,2023,28,"Coccidioidomycosis, Confirmed",25.0
+CALIFORNIA,2023,28,"Coccidioidomycosis, total",25.0
+CALIFORNIA,2023,28,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),37.0
+CALIFORNIA,2023,29,Campylobacteriosis,268.0
+CALIFORNIA,2023,29,"Coccidioidomycosis, Confirmed",24.0
+CALIFORNIA,2023,29,"Coccidioidomycosis, total",24.0
+CALIFORNIA,2023,29,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2023,30,Campylobacteriosis,208.0
+CALIFORNIA,2023,30,"Coccidioidomycosis, Confirmed",27.0
+CALIFORNIA,2023,30,"Coccidioidomycosis, total",27.0
+CALIFORNIA,2023,30,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),26.0
+CALIFORNIA,2023,31,Campylobacteriosis,213.0
+CALIFORNIA,2023,31,"Coccidioidomycosis, Confirmed",49.0
+CALIFORNIA,2023,31,"Coccidioidomycosis, total",49.0
+CALIFORNIA,2023,31,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2023,32,Campylobacteriosis,206.0
+CALIFORNIA,2023,32,"Coccidioidomycosis, Confirmed",31.0
+CALIFORNIA,2023,32,"Coccidioidomycosis, total",31.0
+CALIFORNIA,2023,32,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),54.0
+CALIFORNIA,2023,33,Campylobacteriosis,189.0
+CALIFORNIA,2023,33,"Coccidioidomycosis, Confirmed",48.0
+CALIFORNIA,2023,33,"Coccidioidomycosis, total",48.0
+CALIFORNIA,2023,33,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),37.0
+CALIFORNIA,2023,34,Campylobacteriosis,171.0
+CALIFORNIA,2023,34,"Coccidioidomycosis, Confirmed",57.0
+CALIFORNIA,2023,34,"Coccidioidomycosis, total",57.0
+CALIFORNIA,2023,34,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),47.0
+CALIFORNIA,2023,35,Campylobacteriosis,160.0
+CALIFORNIA,2023,35,"Coccidioidomycosis, Confirmed",46.0
+CALIFORNIA,2023,35,"Coccidioidomycosis, total",46.0
+CALIFORNIA,2023,35,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),32.0
+CALIFORNIA,2023,36,Campylobacteriosis,68.0
+CALIFORNIA,2023,36,"Coccidioidomycosis, Confirmed",22.0
+CALIFORNIA,2023,36,"Coccidioidomycosis, total",22.0
+CALIFORNIA,2023,36,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),30.0
+CALIFORNIA,2023,37,Campylobacteriosis,197.0
+CALIFORNIA,2023,37,"Coccidioidomycosis, Confirmed",57.0
+CALIFORNIA,2023,37,"Coccidioidomycosis, total",57.0
+CALIFORNIA,2023,37,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),37.0
+CALIFORNIA,2023,38,Campylobacteriosis,103.0
+CALIFORNIA,2023,38,"Coccidioidomycosis, Confirmed",29.0
+CALIFORNIA,2023,38,"Coccidioidomycosis, total",29.0
+CALIFORNIA,2023,38,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),5.0
+CALIFORNIA,2023,39,Campylobacteriosis,201.0
+CALIFORNIA,2023,39,"Coccidioidomycosis, Confirmed",65.0
+CALIFORNIA,2023,39,"Coccidioidomycosis, total",65.0
+CALIFORNIA,2023,39,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),46.0
+CALIFORNIA,2023,40,Campylobacteriosis,170.0
+CALIFORNIA,2023,40,"Coccidioidomycosis, Confirmed",52.0
+CALIFORNIA,2023,40,"Coccidioidomycosis, total",52.0
+CALIFORNIA,2023,40,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),43.0
+CALIFORNIA,2023,41,Campylobacteriosis,132.0
+CALIFORNIA,2023,41,"Coccidioidomycosis, Confirmed",68.0
+CALIFORNIA,2023,41,"Coccidioidomycosis, total",68.0
+CALIFORNIA,2023,41,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),32.0
+CALIFORNIA,2023,42,Campylobacteriosis,118.0
+CALIFORNIA,2023,42,"Coccidioidomycosis, Confirmed",38.0
+CALIFORNIA,2023,42,"Coccidioidomycosis, total",38.0
+CALIFORNIA,2023,42,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),11.0
+CALIFORNIA,2023,43,Campylobacteriosis,169.0
+CALIFORNIA,2023,43,"Coccidioidomycosis, Confirmed",76.0
+CALIFORNIA,2023,43,"Coccidioidomycosis, total",76.0
+CALIFORNIA,2023,43,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),41.0
+CALIFORNIA,2023,44,Campylobacteriosis,137.0
+CALIFORNIA,2023,44,"Coccidioidomycosis, Confirmed",90.0
+CALIFORNIA,2023,44,"Coccidioidomycosis, total",90.0
+CALIFORNIA,2023,44,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),41.0
+CALIFORNIA,2023,45,Campylobacteriosis,74.0
+CALIFORNIA,2023,45,"Coccidioidomycosis, Confirmed",71.0
+CALIFORNIA,2023,45,"Coccidioidomycosis, total",71.0
+CALIFORNIA,2023,45,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),36.0
+CALIFORNIA,2023,46,Campylobacteriosis,135.0
+CALIFORNIA,2023,46,"Coccidioidomycosis, Confirmed",30.0
+CALIFORNIA,2023,46,"Coccidioidomycosis, total",30.0
+CALIFORNIA,2023,46,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2023,47,Campylobacteriosis,125.0
+CALIFORNIA,2023,47,"Coccidioidomycosis, Confirmed",63.0
+CALIFORNIA,2023,47,"Coccidioidomycosis, total",63.0
+CALIFORNIA,2023,47,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),23.0
+CALIFORNIA,2023,48,Campylobacteriosis,198.0
+CALIFORNIA,2023,48,"Coccidioidomycosis, Confirmed",47.0
+CALIFORNIA,2023,48,"Coccidioidomycosis, total",47.0
+CALIFORNIA,2023,48,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),32.0
+CALIFORNIA,2023,49,Campylobacteriosis,119.0
+CALIFORNIA,2023,49,"Coccidioidomycosis, Confirmed",59.0
+CALIFORNIA,2023,49,"Coccidioidomycosis, total",59.0
+CALIFORNIA,2023,49,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),21.0
+CALIFORNIA,2023,50,Campylobacteriosis,137.0
+CALIFORNIA,2023,50,"Coccidioidomycosis, Confirmed",82.0
+CALIFORNIA,2023,50,"Coccidioidomycosis, total",82.0
+CALIFORNIA,2023,50,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),14.0
+CALIFORNIA,2023,51,Campylobacteriosis,121.0
+CALIFORNIA,2023,51,"Coccidioidomycosis, Confirmed",61.0
+CALIFORNIA,2023,51,"Coccidioidomycosis, total",61.0
+CALIFORNIA,2023,51,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),18.0
+CALIFORNIA,2023,52,Campylobacteriosis,20.0
+CALIFORNIA,2023,52,"Coccidioidomycosis, Confirmed",4.0
+CALIFORNIA,2023,52,"Coccidioidomycosis, total",4.0
+CALIFORNIA,2023,52,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,1,Campylobacteriosis,61.0
+CALIFORNIA,2024,1,"Coccidioidomycosis, Confirmed",39.0
+CALIFORNIA,2024,1,"Coccidioidomycosis, total",39.0
+CALIFORNIA,2024,1,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2024,2,Campylobacteriosis,138.0
+CALIFORNIA,2024,2,"Coccidioidomycosis, Confirmed",64.0
+CALIFORNIA,2024,2,"Coccidioidomycosis, total",64.0
+CALIFORNIA,2024,2,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),15.0
+CALIFORNIA,2024,3,Campylobacteriosis,144.0
+CALIFORNIA,2024,3,"Coccidioidomycosis, Confirmed",70.0
+CALIFORNIA,2024,3,"Coccidioidomycosis, total",70.0
+CALIFORNIA,2024,3,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2024,4,Campylobacteriosis,148.0
+CALIFORNIA,2024,4,"Coccidioidomycosis, Confirmed",52.0
+CALIFORNIA,2024,4,"Coccidioidomycosis, total",52.0
+CALIFORNIA,2024,4,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),21.0
+CALIFORNIA,2024,5,Campylobacteriosis,138.0
+CALIFORNIA,2024,5,"Coccidioidomycosis, Confirmed",94.0
+CALIFORNIA,2024,5,"Coccidioidomycosis, total",94.0
+CALIFORNIA,2024,5,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),19.0
+CALIFORNIA,2024,6,Campylobacteriosis,141.0
+CALIFORNIA,2024,6,"Coccidioidomycosis, Confirmed",82.0
+CALIFORNIA,2024,6,"Coccidioidomycosis, total",82.0
+CALIFORNIA,2024,6,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),14.0
+CALIFORNIA,2024,7,Campylobacteriosis,152.0
+CALIFORNIA,2024,7,"Coccidioidomycosis, Confirmed",61.0
+CALIFORNIA,2024,7,"Coccidioidomycosis, total",61.0
+CALIFORNIA,2024,7,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2024,8,Campylobacteriosis,129.0
+CALIFORNIA,2024,8,"Coccidioidomycosis, Confirmed",85.0
+CALIFORNIA,2024,8,"Coccidioidomycosis, total",85.0
+CALIFORNIA,2024,8,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),15.0
+CALIFORNIA,2024,9,Campylobacteriosis,154.0
+CALIFORNIA,2024,9,"Coccidioidomycosis, Confirmed",79.0
+CALIFORNIA,2024,9,"Coccidioidomycosis, total",79.0
+CALIFORNIA,2024,9,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),12.0
+CALIFORNIA,2024,10,Campylobacteriosis,131.0
+CALIFORNIA,2024,10,"Coccidioidomycosis, Confirmed",74.0
+CALIFORNIA,2024,10,"Coccidioidomycosis, total",74.0
+CALIFORNIA,2024,10,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),9.0
+CALIFORNIA,2024,11,Campylobacteriosis,132.0
+CALIFORNIA,2024,11,"Coccidioidomycosis, Confirmed",48.0
+CALIFORNIA,2024,11,"Coccidioidomycosis, total",48.0
+CALIFORNIA,2024,11,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2024,12,Campylobacteriosis,127.0
+CALIFORNIA,2024,12,"Coccidioidomycosis, Confirmed",50.0
+CALIFORNIA,2024,12,"Coccidioidomycosis, total",50.0
+CALIFORNIA,2024,12,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+CALIFORNIA,2024,13,Campylobacteriosis,127.0
+CALIFORNIA,2024,13,"Coccidioidomycosis, Confirmed",22.0
+CALIFORNIA,2024,13,"Coccidioidomycosis, total",22.0
+CALIFORNIA,2024,13,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),9.0
+CALIFORNIA,2024,14,Campylobacteriosis,167.0
+CALIFORNIA,2024,14,"Coccidioidomycosis, Confirmed",27.0
+CALIFORNIA,2024,14,"Coccidioidomycosis, total",27.0
+CALIFORNIA,2024,14,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+CALIFORNIA,2024,15,Campylobacteriosis,155.0
+CALIFORNIA,2024,15,"Coccidioidomycosis, Confirmed",54.0
+CALIFORNIA,2024,15,"Coccidioidomycosis, total",54.0
+CALIFORNIA,2024,15,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),14.0
+CALIFORNIA,2024,16,Campylobacteriosis,140.0
+CALIFORNIA,2024,16,"Coccidioidomycosis, Confirmed",32.0
+CALIFORNIA,2024,16,"Coccidioidomycosis, total",32.0
+CALIFORNIA,2024,16,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),18.0
+CALIFORNIA,2024,17,Campylobacteriosis,134.0
+CALIFORNIA,2024,17,"Coccidioidomycosis, Confirmed",16.0
+CALIFORNIA,2024,17,"Coccidioidomycosis, total",16.0
+CALIFORNIA,2024,17,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,18,Campylobacteriosis,156.0
+CALIFORNIA,2024,18,"Coccidioidomycosis, Confirmed",41.0
+CALIFORNIA,2024,18,"Coccidioidomycosis, total",41.0
+CALIFORNIA,2024,18,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,19,Campylobacteriosis,177.0
+CALIFORNIA,2024,19,"Coccidioidomycosis, Confirmed",52.0
+CALIFORNIA,2024,19,"Coccidioidomycosis, total",52.0
+CALIFORNIA,2024,19,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,20,Campylobacteriosis,194.0
+CALIFORNIA,2024,20,"Coccidioidomycosis, Confirmed",39.0
+CALIFORNIA,2024,20,"Coccidioidomycosis, total",39.0
+CALIFORNIA,2024,20,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,21,Campylobacteriosis,182.0
+CALIFORNIA,2024,21,"Coccidioidomycosis, Confirmed",40.0
+CALIFORNIA,2024,21,"Coccidioidomycosis, total",40.0
+CALIFORNIA,2024,21,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,22,Campylobacteriosis,201.0
+CALIFORNIA,2024,22,"Coccidioidomycosis, Confirmed",35.0
+CALIFORNIA,2024,22,"Coccidioidomycosis, total",35.0
+CALIFORNIA,2024,22,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,23,Campylobacteriosis,227.0
+CALIFORNIA,2024,23,"Coccidioidomycosis, Confirmed",38.0
+CALIFORNIA,2024,23,"Coccidioidomycosis, total",38.0
+CALIFORNIA,2024,23,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,24,Campylobacteriosis,211.0
+CALIFORNIA,2024,24,"Coccidioidomycosis, Confirmed",44.0
+CALIFORNIA,2024,24,"Coccidioidomycosis, total",44.0
+CALIFORNIA,2024,24,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,25,Campylobacteriosis,228.0
+CALIFORNIA,2024,25,"Coccidioidomycosis, Confirmed",61.0
+CALIFORNIA,2024,25,"Coccidioidomycosis, total",61.0
+CALIFORNIA,2024,25,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,26,Campylobacteriosis,189.0
+CALIFORNIA,2024,26,"Coccidioidomycosis, Confirmed",37.0
+CALIFORNIA,2024,26,"Coccidioidomycosis, total",37.0
+CALIFORNIA,2024,26,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,27,Campylobacteriosis,184.0
+CALIFORNIA,2024,27,"Coccidioidomycosis, Confirmed",22.0
+CALIFORNIA,2024,27,"Coccidioidomycosis, total",22.0
+CALIFORNIA,2024,27,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,28,Campylobacteriosis,210.0
+CALIFORNIA,2024,28,"Coccidioidomycosis, Confirmed",54.0
+CALIFORNIA,2024,28,"Coccidioidomycosis, total",54.0
+CALIFORNIA,2024,28,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,29,Campylobacteriosis,197.0
+CALIFORNIA,2024,29,"Coccidioidomycosis, Confirmed",44.0
+CALIFORNIA,2024,29,"Coccidioidomycosis, total",44.0
+CALIFORNIA,2024,29,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,30,Campylobacteriosis,167.0
+CALIFORNIA,2024,30,"Coccidioidomycosis, Confirmed",39.0
+CALIFORNIA,2024,30,"Coccidioidomycosis, total",39.0
+CALIFORNIA,2024,30,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,31,Campylobacteriosis,175.0
+CALIFORNIA,2024,31,"Coccidioidomycosis, Confirmed",45.0
+CALIFORNIA,2024,31,"Coccidioidomycosis, total",45.0
+CALIFORNIA,2024,31,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,32,Campylobacteriosis,187.0
+CALIFORNIA,2024,32,"Coccidioidomycosis, Confirmed",56.0
+CALIFORNIA,2024,32,"Coccidioidomycosis, total",56.0
+CALIFORNIA,2024,32,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,33,Campylobacteriosis,186.0
+CALIFORNIA,2024,33,"Coccidioidomycosis, Confirmed",53.0
+CALIFORNIA,2024,33,"Coccidioidomycosis, total",53.0
+CALIFORNIA,2024,33,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,34,Campylobacteriosis,182.0
+CALIFORNIA,2024,34,"Coccidioidomycosis, Confirmed",64.0
+CALIFORNIA,2024,34,"Coccidioidomycosis, total",64.0
+CALIFORNIA,2024,34,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,35,Campylobacteriosis,156.0
+CALIFORNIA,2024,35,"Coccidioidomycosis, Confirmed",46.0
+CALIFORNIA,2024,35,"Coccidioidomycosis, total",46.0
+CALIFORNIA,2024,35,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,36,Campylobacteriosis,164.0
+CALIFORNIA,2024,36,"Coccidioidomycosis, Confirmed",48.0
+CALIFORNIA,2024,36,"Coccidioidomycosis, total",48.0
+CALIFORNIA,2024,36,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,37,Campylobacteriosis,137.0
+CALIFORNIA,2024,37,"Coccidioidomycosis, Confirmed",49.0
+CALIFORNIA,2024,37,"Coccidioidomycosis, total",49.0
+CALIFORNIA,2024,37,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,38,Campylobacteriosis,159.0
+CALIFORNIA,2024,38,"Coccidioidomycosis, Confirmed",44.0
+CALIFORNIA,2024,38,"Coccidioidomycosis, total",44.0
+CALIFORNIA,2024,38,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,39,Campylobacteriosis,165.0
+CALIFORNIA,2024,39,"Coccidioidomycosis, Confirmed",54.0
+CALIFORNIA,2024,39,"Coccidioidomycosis, total",54.0
+CALIFORNIA,2024,39,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,40,Campylobacteriosis,142.0
+CALIFORNIA,2024,40,"Coccidioidomycosis, Confirmed",70.0
+CALIFORNIA,2024,40,"Coccidioidomycosis, total",70.0
+CALIFORNIA,2024,40,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,41,Campylobacteriosis,80.0
+CALIFORNIA,2024,41,"Coccidioidomycosis, Confirmed",36.0
+CALIFORNIA,2024,41,"Coccidioidomycosis, total",36.0
+CALIFORNIA,2024,41,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),
+CALIFORNIA,2024,42,Campylobacteriosis,139.0
+CALIFORNIA,2024,42,"Coccidioidomycosis, Confirmed",69.0
+CALIFORNIA,2024,42,"Coccidioidomycosis, total",69.0
+CALIFORNIA,2024,42,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),37.0
+CALIFORNIA,2024,43,Campylobacteriosis,134.0
+CALIFORNIA,2024,43,"Coccidioidomycosis, Confirmed",70.0
+CALIFORNIA,2024,43,"Coccidioidomycosis, total",70.0
+CALIFORNIA,2024,43,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),27.0
+CALIFORNIA,2024,44,Campylobacteriosis,131.0
+CALIFORNIA,2024,44,"Coccidioidomycosis, Confirmed",21.0
+CALIFORNIA,2024,44,"Coccidioidomycosis, total",21.0
+CALIFORNIA,2024,44,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),33.0
+CALIFORNIA,2024,45,Campylobacteriosis,91.0
+CALIFORNIA,2024,45,"Coccidioidomycosis, Confirmed",35.0
+CALIFORNIA,2024,45,"Coccidioidomycosis, total",35.0
+CALIFORNIA,2024,45,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),15.0
+CALIFORNIA,2024,46,Campylobacteriosis,139.0
+CALIFORNIA,2024,46,"Coccidioidomycosis, Confirmed",51.0
+CALIFORNIA,2024,46,"Coccidioidomycosis, total",51.0
+CALIFORNIA,2024,46,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),23.0
+CALIFORNIA,2024,47,Campylobacteriosis,155.0
+CALIFORNIA,2024,47,"Coccidioidomycosis, Confirmed",70.0
+CALIFORNIA,2024,47,"Coccidioidomycosis, total",70.0
+CALIFORNIA,2024,47,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),17.0
+CALIFORNIA,2024,48,Campylobacteriosis,131.0
+CALIFORNIA,2024,48,"Coccidioidomycosis, Confirmed",26.0
+CALIFORNIA,2024,48,"Coccidioidomycosis, total",26.0
+CALIFORNIA,2024,48,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),14.0
+CALIFORNIA,2024,49,Campylobacteriosis,177.0
+CALIFORNIA,2024,49,"Coccidioidomycosis, Confirmed",92.0
+CALIFORNIA,2024,49,"Coccidioidomycosis, total",92.0
+CALIFORNIA,2024,49,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),31.0
+CALIFORNIA,2024,50,Campylobacteriosis,131.0
+CALIFORNIA,2024,50,"Coccidioidomycosis, Confirmed",63.0
+CALIFORNIA,2024,50,"Coccidioidomycosis, total",63.0
+CALIFORNIA,2024,50,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),21.0
+CALIFORNIA,2024,51,Campylobacteriosis,127.0
+CALIFORNIA,2024,51,"Coccidioidomycosis, Confirmed",64.0
+CALIFORNIA,2024,51,"Coccidioidomycosis, total",64.0
+CALIFORNIA,2024,51,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),29.0
+CALIFORNIA,2024,52,Campylobacteriosis,80.0
+CALIFORNIA,2024,52,"Coccidioidomycosis, Confirmed",19.0
+CALIFORNIA,2024,52,"Coccidioidomycosis, total",19.0
+CALIFORNIA,2024,52,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),11.0
+California,2025,1,Campylobacteriosis,55.0
+California,2025,1,"Coccidioidomycosis, Confirmed",17.0
+California,2025,1,"Coccidioidomycosis, Total",17.0
+California,2025,1,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),8.0
+California,2025,2,Campylobacteriosis,115.0
+California,2025,2,"Coccidioidomycosis, Confirmed",56.0
+California,2025,2,"Coccidioidomycosis, Total",56.0
+California,2025,2,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),29.0
+California,2025,3,Campylobacteriosis,111.0
+California,2025,3,"Coccidioidomycosis, Confirmed",46.0
+California,2025,3,"Coccidioidomycosis, Total",46.0
+California,2025,3,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),9.0
+California,2025,4,Campylobacteriosis,97.0
+California,2025,4,"Coccidioidomycosis, Confirmed",39.0
+California,2025,4,"Coccidioidomycosis, Total",39.0
+California,2025,4,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),16.0
+California,2025,5,Campylobacteriosis,122.0
+California,2025,5,"Coccidioidomycosis, Confirmed",55.0
+California,2025,5,"Coccidioidomycosis, Total",55.0
+California,2025,5,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+California,2025,6,Campylobacteriosis,127.0
+California,2025,6,"Coccidioidomycosis, Confirmed",53.0
+California,2025,6,"Coccidioidomycosis, Total",53.0
+California,2025,6,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),5.0
+California,2025,7,Campylobacteriosis,115.0
+California,2025,7,"Coccidioidomycosis, Confirmed",78.0
+California,2025,7,"Coccidioidomycosis, Total",78.0
+California,2025,7,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),18.0
+California,2025,8,Campylobacteriosis,111.0
+California,2025,8,"Coccidioidomycosis, Confirmed",86.0
+California,2025,8,"Coccidioidomycosis, Total",86.0
+California,2025,8,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+California,2025,9,Campylobacteriosis,143.0
+California,2025,9,"Coccidioidomycosis, Confirmed",63.0
+California,2025,9,"Coccidioidomycosis, Total",63.0
+California,2025,9,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),23.0
+California,2025,10,Campylobacteriosis,135.0
+California,2025,10,"Coccidioidomycosis, Confirmed",59.0
+California,2025,10,"Coccidioidomycosis, Total",59.0
+California,2025,10,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),21.0
+California,2025,11,Campylobacteriosis,137.0
+California,2025,11,"Coccidioidomycosis, Confirmed",52.0
+California,2025,11,"Coccidioidomycosis, Total",52.0
+California,2025,11,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),20.0
+California,2025,12,Campylobacteriosis,154.0
+California,2025,12,"Coccidioidomycosis, Confirmed",50.0
+California,2025,12,"Coccidioidomycosis, Total",50.0
+California,2025,12,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),7.0
+California,2025,13,Campylobacteriosis,125.0
+California,2025,13,"Coccidioidomycosis, Confirmed",29.0
+California,2025,13,"Coccidioidomycosis, Total",29.0
+California,2025,13,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),18.0
+California,2025,14,Campylobacteriosis,145.0
+California,2025,14,"Coccidioidomycosis, Confirmed",57.0
+California,2025,14,"Coccidioidomycosis, Total",57.0
+California,2025,14,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),26.0
+California,2025,15,Campylobacteriosis,151.0
+California,2025,15,"Coccidioidomycosis, Confirmed",47.0
+California,2025,15,"Coccidioidomycosis, Total",47.0
+California,2025,15,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),37.0
+California,2025,16,Campylobacteriosis,106.0
+California,2025,16,"Coccidioidomycosis, Confirmed",45.0
+California,2025,16,"Coccidioidomycosis, Total",45.0
+California,2025,16,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),18.0
+California,2025,17,Campylobacteriosis,155.0
+California,2025,17,"Coccidioidomycosis, Confirmed",63.0
+California,2025,17,"Coccidioidomycosis, Total",63.0
+California,2025,17,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),39.0
+California,2025,18,Campylobacteriosis,100.0
+California,2025,18,"Coccidioidomycosis, Confirmed",58.0
+California,2025,18,"Coccidioidomycosis, Total",58.0
+California,2025,18,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),31.0
+California,2025,19,Campylobacteriosis,151.0
+California,2025,19,"Coccidioidomycosis, Confirmed",66.0
+California,2025,19,"Coccidioidomycosis, Total",66.0
+California,2025,19,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),23.0
+California,2025,20,Campylobacteriosis,181.0
+California,2025,20,"Coccidioidomycosis, Confirmed",67.0
+California,2025,20,"Coccidioidomycosis, Total",67.0
+California,2025,20,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),47.0
+California,2025,21,Campylobacteriosis,202.0
+California,2025,21,"Coccidioidomycosis, Confirmed",51.0
+California,2025,21,"Coccidioidomycosis, Total",51.0
+California,2025,21,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),38.0
+California,2025,22,Campylobacteriosis,173.0
+California,2025,22,"Coccidioidomycosis, Confirmed",66.0
+California,2025,22,"Coccidioidomycosis, Total",66.0
+California,2025,22,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),27.0
+California,2025,23,Campylobacteriosis,207.0
+California,2025,23,"Coccidioidomycosis, Confirmed",74.0
+California,2025,23,"Coccidioidomycosis, Total",74.0
+California,2025,23,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),41.0
+California,2025,24,Campylobacteriosis,236.0
+California,2025,24,"Coccidioidomycosis, Confirmed",55.0
+California,2025,24,"Coccidioidomycosis, Total",55.0
+California,2025,24,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),34.0
+California,2025,25,Campylobacteriosis,200.0
+California,2025,25,"Coccidioidomycosis, Confirmed",78.0
+California,2025,25,"Coccidioidomycosis, Total",78.0
+California,2025,25,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),39.0
+California,2025,26,Campylobacteriosis,195.0
+California,2025,26,"Coccidioidomycosis, Confirmed",69.0
+California,2025,26,"Coccidioidomycosis, Total",69.0
+California,2025,26,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),40.0
+California,2025,27,Campylobacteriosis,214.0
+California,2025,27,"Coccidioidomycosis, Confirmed",46.0
+California,2025,27,"Coccidioidomycosis, Total",46.0
+California,2025,27,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),32.0
+California,2025,28,Campylobacteriosis,253.0
+California,2025,28,"Coccidioidomycosis, Confirmed",67.0
+California,2025,28,"Coccidioidomycosis, Total",67.0
+California,2025,28,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),44.0
+California,2025,29,Campylobacteriosis,210.0
+California,2025,29,"Coccidioidomycosis, Confirmed",54.0
+California,2025,29,"Coccidioidomycosis, Total",54.0
+California,2025,29,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),48.0
+California,2025,30,Campylobacteriosis,187.0
+California,2025,30,"Coccidioidomycosis, Confirmed",52.0
+California,2025,30,"Coccidioidomycosis, Total",52.0
+California,2025,30,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),41.0
+California,2025,31,Campylobacteriosis,191.0
+California,2025,31,"Coccidioidomycosis, Confirmed",50.0
+California,2025,31,"Coccidioidomycosis, Total",50.0
+California,2025,31,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),34.0
+California,2025,32,Campylobacteriosis,202.0
+California,2025,32,"Coccidioidomycosis, Confirmed",67.0
+California,2025,32,"Coccidioidomycosis, Total",67.0
+California,2025,32,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),51.0
+California,2025,33,Campylobacteriosis,217.0
+California,2025,33,"Coccidioidomycosis, Confirmed",82.0
+California,2025,33,"Coccidioidomycosis, Total",82.0
+California,2025,33,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),41.0
+California,2025,34,Campylobacteriosis,176.0
+California,2025,34,"Coccidioidomycosis, Confirmed",58.0
+California,2025,34,"Coccidioidomycosis, Total",58.0
+California,2025,34,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),40.0
+California,2025,35,Campylobacteriosis,115.0
+California,2025,35,"Coccidioidomycosis, Confirmed",26.0
+California,2025,35,"Coccidioidomycosis, Total",26.0
+California,2025,35,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),13.0
+California,2025,36,Campylobacteriosis,150.0
+California,2025,36,"Coccidioidomycosis, Confirmed",40.0
+California,2025,36,"Coccidioidomycosis, Total",40.0
+California,2025,36,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),30.0
+California,2025,37,Campylobacteriosis,123.0
+California,2025,37,"Coccidioidomycosis, Confirmed",55.0
+California,2025,37,"Coccidioidomycosis, Total",55.0
+California,2025,37,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),50.0
+California,2025,38,Campylobacteriosis,180.0
+California,2025,38,"Coccidioidomycosis, Confirmed",65.0
+California,2025,38,"Coccidioidomycosis, Total",65.0
+California,2025,38,Salmonellosis (excluding Salmonella Typhi infection and Salmonella Paratyphi infection),42.0
