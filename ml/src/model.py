@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSearchCV
+from sklearn.model_selection import train_test_split, RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
@@ -11,7 +11,9 @@ from sklearn.metrics import (
     roc_auc_score,
     confusion_matrix,
 )
+from scipy.stats import loguniform
 import joblib
+
 
 # config
 SCRIPT_ROOT = Path(__file__).parent
@@ -30,9 +32,7 @@ df = pd.read_csv(DF_PATH)
 y = df["FUTURE_OUTBREAK"]
 X = df.drop("FUTURE_OUTBREAK", axis=1)
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, stratify=y, random_state=67
-)
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=67)
 
 
 # data preprocessing
@@ -42,8 +42,15 @@ preprocessor = make_column_transformer((numeric_transformer, numeric_cols))
 
 
 # making model, hyperparamter optimization
-lr = LogisticRegression(max_iter=1000)
+lr = LogisticRegression(max_iter=1000, random_state=67, class_weight="balanced")
 pipe = make_pipeline(preprocessor, lr)
+param_choices = {"logisticregression__C": loguniform(1e-3, 1e3)}
+
+random_search = RandomizedSearchCV(
+    pipe, param_choices, random_state=67, scoring="f1", n_iter=50, n_jobs=-1
+)
+random_search.fit(X_train, y_train)
+final_model = random_search.best_estimator_
 
 
 
@@ -51,14 +58,6 @@ pipe = make_pipeline(preprocessor, lr)
 
 
 
-model = LogisticRegression(max_iter=1000, random_state=67)
-model.fit(X_train_scaled, y_train)
-
-y_train_pred = model.predict(X_train_scaled)
-y_train_pred_proba = model.predict_proba(X_train_scaled)[:, 1]
-
-y_test_pred = model.predict(X_test_scaled)
-y_test_pred_proba = model.predict_proba(X_test_scaled)[:, 1]
 
 print("\n" + "=" * 70)
 print("MODEL PERFORMANCE - TRAINING")
