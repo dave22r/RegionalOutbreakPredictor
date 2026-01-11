@@ -13,6 +13,7 @@ from sklearn.metrics import (
 )
 import joblib
 
+# config
 SCRIPT_ROOT = Path(__file__).parent
 DF_PATH = (
     SCRIPT_ROOT / "data" / "processed" / "test_dataset.csv"
@@ -22,6 +23,8 @@ MODEL_PATH = (
 )  # Path("ml/models/logistic_model.pkl")
 SCALER_PATH = SCRIPT_ROOT / "models" / "scaler.pkl"  # Path("ml/models/scaler.pkl")
 
+
+# reading file, splitting data
 df = pd.read_csv(DF_PATH)
 
 y = df["FUTURE_OUTBREAK"]
@@ -31,9 +34,22 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, stratify=y, random_state=67
 )
 
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+
+# data preprocessing
+numeric_transformer = StandardScaler()
+numeric_cols = X_train.columns.tolist()[6:]
+preprocessor = make_column_transformer((numeric_transformer, numeric_cols))
+
+
+# making model, hyperparamter optimization
+lr = LogisticRegression(max_iter=1000)
+pipe = make_pipeline(preprocessor, lr)
+
+
+
+
+
+
 
 model = LogisticRegression(max_iter=1000, random_state=67)
 model.fit(X_train_scaled, y_train)
