@@ -11,10 +11,10 @@ from sklearn.metrics import (
 )
 import joblib
 
-# run from project root
-DF_PATH = Path("ml/data/processed/test_dataset.csv")
-MODEL_PATH = Path("ml/models/logistic_model.pkl")
-SCALER_PATH = Path("ml/models/scaler.pkl")
+SCRIPT_ROOT = Path(__file__).parent
+DF_PATH = SCRIPT_ROOT / "data" / "processed" / "test_dataset.csv" # Path("data/processed/test_dataset.csv")
+MODEL_PATH = SCRIPT_ROOT / "models" / "logistic_model.pkl" # Path("ml/models/logistic_model.pkl")
+SCALER_PATH = SCRIPT_ROOT / "models" / "scaler.pkl"     #Path("ml/models/scaler.pkl")
 
 df = pd.read_csv(DF_PATH)
 
