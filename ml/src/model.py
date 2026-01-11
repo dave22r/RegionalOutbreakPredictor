@@ -27,13 +27,8 @@ import joblib
 
 # config
 ML_ROOT = Path(__file__).parent.parent
-DF_PATH = (
-    ML_ROOT / "data" / "processed" / "test_dataset.csv"
-)  # Path("data/processed/test_dataset.csv")
-MODEL_PATH = (
-    ML_ROOT / "models" / "logistic_model.pkl"
-)  # Path("ml/models/logistic_model.pkl")
-SCALER_PATH = ML_ROOT / "models" / "scaler.pkl"  # Path("ml/models/scaler.pkl")
+DF_PATH = ML_ROOT / "data" / "processed" / "test_dataset.csv"
+MODEL_PATH = ML_ROOT / "models" / "lr_classifier.pkl"
 RANDOM_STATE = 67
 
 # reading file, splitting data
@@ -65,6 +60,7 @@ random_search = RandomizedSearchCV(
 )
 random_search.fit(X_train, y_train)
 final_model = random_search.best_estimator_
+joblib.dump(final_model, MODEL_PATH)
 
 
 def get_model_metrics(
@@ -269,9 +265,22 @@ def get_model_metrics(
         # For logistic regression in pipeline
         if hasattr(model, "named_steps"):
             lr_model = model.named_steps["logisticregression"]
+
+            if "columntransformer" in model.named_steps:
+                transformer = model.named_steps["columntransformer"]
+            else:
+                transformer = model.named_steps[list(model.named_steps.keys())[0]]
+
             if hasattr(lr_model, "coef_"):
                 coef = lr_model.coef_[0]
-                feature_names = X_train.columns.tolist()
+
+                try:
+                    feature_names = transformer.get_feature_names_out()
+                except:
+                    feature_names = X_train.columns.tolist()
+
+                if len(coef) != len(feature_names):
+                    feature_names = X_train.columns.tolist()[6:]  # Your numeric_cols
 
                 # Get top 10 features by absolute coefficient
                 importance_df = (
@@ -325,7 +334,3 @@ results = get_model_metrics(
     model_name="Logistic Regression",
     random_state=RANDOM_STATE,
 )
-
-
-# joblib.dump(model, MODEL_PATH)
-# joblib.dump(scaler, SCALER_PATH)
