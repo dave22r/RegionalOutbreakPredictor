@@ -29,7 +29,7 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-model = LogisticRegression(max_iter=1000, random_state=67, solver="lbfgs")
+model = LogisticRegression(max_iter=1000, random_state=67)
 model.fit(X_train_scaled, y_train)
 
 y_train_pred = model.predict(X_train_scaled)
