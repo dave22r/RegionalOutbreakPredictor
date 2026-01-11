@@ -1,7 +1,9 @@
 import pandas as pd
 from pathlib import Path
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler
+from sklearn.compose import make_column_transformer
+from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     classification_report,
@@ -12,9 +14,13 @@ from sklearn.metrics import (
 import joblib
 
 SCRIPT_ROOT = Path(__file__).parent
-DF_PATH = SCRIPT_ROOT / "data" / "processed" / "test_dataset.csv" # Path("data/processed/test_dataset.csv")
-MODEL_PATH = SCRIPT_ROOT / "models" / "logistic_model.pkl" # Path("ml/models/logistic_model.pkl")
-SCALER_PATH = SCRIPT_ROOT / "models" / "scaler.pkl"     #Path("ml/models/scaler.pkl")
+DF_PATH = (
+    SCRIPT_ROOT / "data" / "processed" / "test_dataset.csv"
+)  # Path("data/processed/test_dataset.csv")
+MODEL_PATH = (
+    SCRIPT_ROOT / "models" / "logistic_model.pkl"
+)  # Path("ml/models/logistic_model.pkl")
+SCALER_PATH = SCRIPT_ROOT / "models" / "scaler.pkl"  # Path("ml/models/scaler.pkl")
 
 df = pd.read_csv(DF_PATH)
 
