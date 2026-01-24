@@ -11,7 +11,6 @@ from sklearn.metrics import (
     precision_score,
     recall_score,
     accuracy_score,
-    classification_report,
     confusion_matrix,
     roc_auc_score,
     precision_recall_curve,
@@ -38,7 +37,7 @@ y = df["FUTURE_OUTBREAK"]
 X = df.drop("FUTURE_OUTBREAK", axis=1)
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, stratify=y, random_state=RANDOM_STATE
+    X, y, random_state=RANDOM_STATE
 )
 
 
@@ -63,6 +62,10 @@ final_model = random_search.best_estimator_
 joblib.dump(final_model, MODEL_PATH)
 
 
+
+
+
+# visualization function
 def get_model_metrics(
     model,
     X_train,
