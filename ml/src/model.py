@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.model_selection import train_test_split, RandomizedSearchCV, TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
@@ -44,7 +44,17 @@ X_train, X_test, y_train, y_test = train_test_split(
 # data preprocessing
 numeric_transformer = StandardScaler()
 numeric_cols = X_train.columns.tolist()[6:]
-preprocessor = make_column_transformer((numeric_transformer, numeric_cols))
+time_series = X_train.columns.tolist()[:2]
+preprocessor = make_column_transformer(
+        (
+            numeric_transformer, 
+            numeric_cols
+        ),
+        (
+            "passthrough",
+            time_series
+        )
+    )
 
 
 # making model, hyperparamter optimization
@@ -52,10 +62,11 @@ lr = LogisticRegression(
     max_iter=1000, random_state=RANDOM_STATE, class_weight="balanced"
 )
 pipe = make_pipeline(preprocessor, lr)
-param_choices = {"logisticregression__C": loguniform(1e-3, 1e3)}
 
+param_choices = {"logisticregression__C": loguniform(1e-3, 1e3)}
+tscv = TimeSeriesSplit(n_splits=5)
 random_search = RandomizedSearchCV(
-    pipe, param_choices, random_state=RANDOM_STATE, scoring="f1", n_iter=50, n_jobs=-1
+    pipe, param_choices, random_state=RANDOM_STATE, scoring="f1", n_iter=50, cv=tscv, n_jobs=-1
 )
 random_search.fit(X_train, y_train)
 final_model = random_search.best_estimator_
