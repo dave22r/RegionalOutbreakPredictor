@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from sklearn.model_selection import train_test_split, RandomizedSearchCV, TimeSeriesSplit
+from sklearn.model_selection import RandomizedSearchCV, TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import make_column_transformer
 from sklearn.pipeline import make_pipeline
@@ -30,16 +30,21 @@ DF_PATH = ML_ROOT / "data" / "processed" / "test_dataset.csv"
 MODEL_PATH = ML_ROOT / "models" / "lr_classifier.pkl"
 RANDOM_STATE = 67
 
-# reading file, splitting data
+# reading file, splitting data manually because of time series
 df = pd.read_csv(DF_PATH)
+df.sort_values(by=["YEAR", "WEEK"],inplace=True)
 
-y = df["FUTURE_OUTBREAK"]
-X = df.drop("FUTURE_OUTBREAK", axis=1)
+split_idx = int(len(df)*0.75)
+df_train = df.iloc[:split_idx]
+df_test = df.iloc[split_idx:]
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, random_state=RANDOM_STATE
-)
+df_train.drop(columns=["YEAR", "WEEK"], inplace=True)
+df_test.drop(columns=["YEAR", "WEEK"], inplace=True)
 
+X_train = df_train.drop(columns=["FUTURE_OUTBREAK"])
+y_train = df_train["FUTURE_OUTBREAK"]
+X_test = df_test.drop(columns=["FUTURE_OUTBREAK"])
+y_test = df_test["FUTURE_OUTBREAK"]
 
 # data preprocessing
 numeric_transformer = StandardScaler()
@@ -66,6 +71,7 @@ pipe = make_pipeline(preprocessor, lr)
 param_choices = {"logisticregression__C": loguniform(1e-3, 1e3)}
 tscv = TimeSeriesSplit(n_splits=5)
 random_search = RandomizedSearchCV(
+    # TODO: test optimizing for other scores?
     pipe, param_choices, random_state=RANDOM_STATE, scoring="f1", n_iter=50, cv=tscv, n_jobs=-1
 )
 random_search.fit(X_train, y_train)
@@ -202,7 +208,7 @@ def get_model_metrics(
     plt.legend(loc="lower right")
     plt.grid(alpha=0.3)
 
-    # 5. Precision-Recall Curve (IMPORTANT for imbalanced data)
+    # 5. Precision-Recall Curve 
     ax5 = plt.subplot(3, 3, 5)
     precision_vals, recall_vals, _ = precision_recall_curve(y_test, y_proba_test)
     avg_precision = average_precision_score(y_test, y_proba_test)
