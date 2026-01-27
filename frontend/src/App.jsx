@@ -103,15 +103,13 @@ function CustomMap({ camera, setCamera }) {
       getPosition: (d) => d,
       getWeight: 1,
       contours: [{ threshold: [0, 100], color, zIndex: 1 }],
-      updateTriggers: {
-        getPosition: predictions,
-      },
     });
   }, [predictions, selectedDisease]);
 
   return (
     <>
       <Map
+        mapId={VITE_GOOGLE_MAPS_ID}
         colorScheme="DARK"
         {...camera}
         onCameraChanged={handleCameraChange}

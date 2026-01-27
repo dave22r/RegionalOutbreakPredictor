@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "url";
+import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,9 +12,9 @@ let predictionsData = [];
 try {
     const data = fs.readFileSync(predictionsPath, "utf8");
     predictionsData = JSON.parse(data);
-    console.log(`Loaded ${predictionsData.length} predictions`);
+    console.log(`✅ Loaded ${predictionsData.length} predictions`);
 } catch (err) {
-    console.error("Warning: Could not load predictions:", err.message);
+    console.error("⚠️  Could not load predictions:", err.message);
 }
 
 export const GET = async (req, res) => {

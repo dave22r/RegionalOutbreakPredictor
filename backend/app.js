@@ -57,7 +57,7 @@ traverse(FS_BASE_PATH, async (path) => {
     const route = path.split(FS_BASE_PATH)[1].replace(".js", "");
     for (const [method, handler] of Object.entries(methods)) {
       if (!method || !["all", "get", "post", "put", "delete", "patch", "options", "head"].includes(method.toLowerCase()) || !handler) {
-        console.log("Warning: Invalid method", method, "skipped in", path);
+        console.log("⚠️  Invalid method", method, "skipped in", path);
         return;
       }
       app[method.toLowerCase()](route, handler);

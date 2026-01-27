@@ -122,7 +122,7 @@ def generate_predictions():
     return all_predictions
 
 def main():
-    print("Generating outbreak predictions...")
+    print("🧬 Generating outbreak predictions...")
     
     predictions = generate_predictions()
     
@@ -136,11 +136,11 @@ def main():
     with open(output_file, 'w') as f:
         json.dump(predictions, f, indent=2)
     
-    print(f"Generated {len(predictions)} prediction points")
-    print(f"Saved to {output_file}")
+    print(f"✅ Generated {len(predictions)} prediction points")
+    print(f"📁 Saved to {output_file}")
     
     # Print summary by disease
-    print("\nPredictions by disease:")
+    print("\n📊 Predictions by disease:")
     for disease in DISEASES:
         count = sum(1 for p in predictions if p["disease"] == disease)
         avg_risk = sum(p["risk"] for p in predictions if p["disease"] == disease) / count if count > 0 else 0

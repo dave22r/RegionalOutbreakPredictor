@@ -183,7 +183,7 @@ def predict_outbreak_risk(model, disease_name, disease_col, week):
         proba = model.predict_proba(df)[0][1]  # Probability of class 1 (outbreak)
         return proba
     except Exception as e:
-        print(f"Warning: Could not predict for {disease_name}: {e}")
+        print(f"⚠️  Warning: Could not predict for {disease_name}: {e}")
         # Fallback to seasonal pattern
         if disease_col == "INFLUENZA":
             return 0.7 if week <= 12 or week >= 48 else 0.2
@@ -194,19 +194,19 @@ def predict_outbreak_risk(model, disease_name, disease_col, week):
 
 def generate_ml_predictions():
     """Generate outbreak predictions using the trained ML model"""
-    print("Loading ML model...")
+    print("🧠 Loading ML model...")
     
     try:
         model = joblib.load(MODEL_PATH)
-        print(f"Model loaded from {MODEL_PATH}")
+        print(f"✅ Model loaded from {MODEL_PATH}")
     except Exception as e:
-        print(f"Error loading model: {e}")
+        print(f"❌ Error loading model: {e}")
         print("   Make sure you've trained the model first by running ml/src/model.py")
         return []
     
     # Current week (week 4 of 2026 - late January)
     current_week = 4
-    print(f"Generating predictions for week {current_week} of 2026")
+    print(f"📅 Generating predictions for week {current_week} of 2026")
     
     all_predictions = []
     
@@ -240,12 +240,12 @@ def generate_ml_predictions():
     return all_predictions
 
 def main():
-    print("Generating ML-based outbreak predictions...\n")
+    print("🧬 Generating ML-based outbreak predictions...\n")
     
     predictions = generate_ml_predictions()
     
     if not predictions:
-        print("Failed to generate predictions")
+        print("❌ Failed to generate predictions")
         return
     
     # Save to JSON file
@@ -254,11 +254,11 @@ def main():
     with open(OUTPUT_PATH, 'w') as f:
         json.dump(predictions, f, indent=2)
     
-    print(f"\nGenerated {len(predictions)} prediction points")
-    print(f"Saved to {OUTPUT_PATH}")
+    print(f"\n✅ Generated {len(predictions)} prediction points")
+    print(f"📁 Saved to {OUTPUT_PATH}")
     
     # Print summary by disease
-    print("\nPredictions by disease:")
+    print("\n📊 Predictions by disease:")
     for disease in DISEASES.keys():
         count = sum(1 for p in predictions if p["disease"] == disease)
         avg_risk = sum(p["risk"] for p in predictions if p["disease"] == disease) / count if count > 0 else 0
