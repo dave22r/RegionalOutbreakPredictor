@@ -104,19 +104,6 @@ The ML prediction script should be run weekly to generate updated predictions. A
 
 The frontend components use a consistent design language with glassmorphism effects (backdrop blur with semi-transparent backgrounds) and smooth animations. All interactive elements provide visual feedback to improve user experience.
 
-### Setup Requirements for Team Members
-
-After pulling these changes, team members will need to:
-
-1. Install any new dependencies by running `npm install` in both the backend and frontend directories.
-
-2. If regenerating ML predictions, ensure Python dependencies are installed: `pip install -r ml/requirements.txt`
-
-3. The `.env` files are not committed to the repository. Each team member needs their own environment configuration files in both `backend/.env` and `frontend/.env`. The backend requires Google OAuth credentials and Firebase configuration. The frontend requires the backend URL and a Google Maps API key.
-
-4. Run the ML prediction script if needed: `python ml/src/ml_predict_outbreaks.py` from the `ml/src` directory.
-
-5. Start both servers: backend with `npm start` and frontend with `npm run dev`.
 
 ### Known Issues
 
