@@ -12,9 +12,9 @@ let predictionsData = [];
 try {
     const data = fs.readFileSync(predictionsPath, "utf8");
     predictionsData = JSON.parse(data);
-    console.log(`✅ Loaded ${predictionsData.length} predictions`);
+    console.log(`Loaded ${predictionsData.length} predictions`);
 } catch (err) {
-    console.error("⚠️  Could not load predictions:", err.message);
+    console.error("Warning: Could not load predictions:", err.message);
 }
 
 export const GET = async (req, res) => {
