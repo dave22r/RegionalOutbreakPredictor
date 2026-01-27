@@ -6,11 +6,16 @@ import "./App.css";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { LinearLoader } from "./components/Loading";
 import { UserWidget } from "./components/UserWidget";
+import { DiseaseTogglePanel, getDiseaseColorRGBA } from "./components/DiseaseTogglePanel";
+import { MapLegend } from "./components/MapLegend";
+import { SymptomReportButton } from "./components/SymptomReportButton";
+import { SymptomReportDrawer } from "./components/SymptomReportDrawer";
 
-const { VITE_GOOGLE_MAPS_API_KEY, VITE_GOOGLE_MAPS_ID } = import.meta.env;
+const { VITE_GOOGLE_MAPS_API_KEY, VITE_GOOGLE_MAPS_ID, VITE_BACKEND_URL } = import.meta.env;
 
 const LOADING_TIME_LIMIT = 2000;
-const DEFAULT_ZOOM = 12;
+const DEFAULT_ZOOM = 6;
+const CALIFORNIA_CENTER = { lat: 37.0, lng: -120.0 };
 
 function DeckGLOverlay(props) {
   const map = useMap();
@@ -28,25 +33,13 @@ function DeckGLOverlay(props) {
 function App() {
   const [ready, setReady] = useState(false);
   const [camera, setCamera] = useState({
-    center: { lat: 37.8, lng: -122.4 },
+    center: CALIFORNIA_CENTER,
     zoom: DEFAULT_ZOOM,
   });
+
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      ({ coords }) => {
-        setCamera({
-          center: { lat: coords.latitude, lng: coords.longitude },
-          zoom: DEFAULT_ZOOM,
-        });
-        setReady(true);
-      },
-      () => setReady(true),
-      {
-        enableHighAccuracy: false,
-        timeout: LOADING_TIME_LIMIT,
-        maximumAge: 3600000,
-      }
-    );
+    const timer = setTimeout(() => setReady(true), 500);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -66,28 +59,86 @@ function App() {
 }
 
 function CustomMap({ camera, setCamera }) {
+  const [selectedDisease, setSelectedDisease] = useState("all");
+  const [predictions, setPredictions] = useState([]);
+  const [metadata, setMetadata] = useState(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
   const handleCameraChange = useCallback((e) => setCamera(e.detail));
 
-  const heatmapLayer = new ContourLayer({
-    id: "ContourLayer2",
-    data: "/testdata.json",
-    cellSize: 200,
-    getPosition: (d) => d,
-    getWeight: 1,
-    contours: [{ threshold: [0, 100], color: [251, 110, 112, 128], zIndex: 1 }],
-  });
+  // Fetch predictions from API
+  useEffect(() => {
+    const fetchPredictions = async () => {
+      setIsLoading(true);
+      try {
+        const response = await fetch(`${VITE_BACKEND_URL}/predictions?disease=${selectedDisease}`);
+        const data = await response.json();
+
+        if (data.success) {
+          setPredictions(data.coordinates);
+          setMetadata(data.metadata);
+        }
+      } catch (error) {
+        console.error("Error fetching predictions:", error);
+        // Fallback to test data
+        const fallbackData = await fetch("/testdata.json").then(r => r.json());
+        setPredictions(fallbackData);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchPredictions();
+  }, [selectedDisease]);
+
+  // Create heatmap layer with disease-specific colors
+  const heatmapLayer = useMemo(() => {
+    const color = getDiseaseColorRGBA(selectedDisease);
+
+    return new ContourLayer({
+      id: `ContourLayer-${selectedDisease}`,
+      data: predictions,
+      cellSize: 200,
+      getPosition: (d) => d,
+      getWeight: 1,
+      contours: [{ threshold: [0, 100], color, zIndex: 1 }],
+      updateTriggers: {
+        getPosition: predictions,
+      },
+    });
+  }, [predictions, selectedDisease]);
+
   return (
-    <Map
-      mapId={VITE_GOOGLE_MAPS_ID}
-      renderingType="VECTOR"
-      colorScheme="DARK"
-      {...camera}
-      onCameraChanged={handleCameraChange}
-      disableDefaultUI={true}
-      keyboardShortcuts={false}
-    >
-      <DeckGLOverlay layers={[heatmapLayer]} />
-    </Map>
+    <>
+      <Map
+        colorScheme="DARK"
+        {...camera}
+        onCameraChanged={handleCameraChange}
+        disableDefaultUI={false}
+        keyboardShortcuts={false}
+        mapTypeControl={false}
+        streetViewControl={false}
+        fullscreenControl={false}
+      >
+        {!isLoading && <DeckGLOverlay layers={[heatmapLayer]} />}
+      </Map>
+
+      {/* UI Overlays */}
+      <DiseaseTogglePanel
+        selectedDisease={selectedDisease}
+        onDiseaseChange={setSelectedDisease}
+      />
+      <MapLegend
+        selectedDisease={selectedDisease}
+        metadata={{ ...metadata, count: predictions.length }}
+      />
+      <SymptomReportButton onClick={() => setIsDrawerOpen(true)} />
+      <SymptomReportDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+      />
+    </>
   );
 }
 
