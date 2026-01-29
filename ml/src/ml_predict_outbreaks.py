@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
+from mock_data import MOCK_WEATHER
 
 # Paths
 ML_ROOT = Path(__file__).parent.parent
@@ -43,37 +44,12 @@ def get_week_features(week):
 def get_current_weather_data(week):
     """
     Get typical weather data for California in the given week.
-    Using historical averages since we don't have real-time API.
+    Using mock data since we don't have real-time API.
+    TODO: Replace with actual weather API in production.
     """
-    # January (week 4) weather for California
-    if 1 <= week <= 12:  # Winter
-        return {
-            "TAVG": 12.0,
-            "TMAX": 18.0,
-            "TMIN": 6.0,
-            "PRCP": 0.3
-        }
-    elif 13 <= week <= 25:  # Spring
-        return {
-            "TAVG": 16.0,
-            "TMAX": 22.0,
-            "TMIN": 10.0,
-            "PRCP": 0.1
-        }
-    elif 26 <= week <= 38:  # Summer
-        return {
-            "TAVG": 24.0,
-            "TMAX": 30.0,
-            "TMIN": 18.0,
-            "PRCP": 0.0
-        }
-    else:  # Fall
-        return {
-            "TAVG": 18.0,
-            "TMAX": 24.0,
-            "TMIN": 12.0,
-            "PRCP": 0.15
-        }
+    # For now, return the same mock weather data regardless of week
+    # In production, this should fetch real-time weather based on week/season
+    return MOCK_WEATHER
 
 def create_feature_vector(disease_col, week, prev1=0, prev2=0, avg4=0):
     """
