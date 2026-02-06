@@ -39,7 +39,7 @@ const traverse = (dir, fn) => {
     if (fs.statSync(path).isDirectory()) {
       traverse(path, fn);
     } else {
-      if (!path.endsWith(".js")) return;
+      if (!path.endsWith(".js")) continue; // Skip non-.js files
       fn(path);
     }
   }
